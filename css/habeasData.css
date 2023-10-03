@@ -1,0 +1,54 @@
+ /* Estilos para el fondo oscuro detrás del pop-up */
+ body {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Estilos para el pop-up */
+.popup {
+    background-color: #F9EAC3;
+    border-radius: 5px;
+    width: 600px;
+    height: 220px;
+    margin: 10% auto;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+/* Estilos para el botón de consentimiento */
+.popup button {
+    background-color: #EBD7A3;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+/* Estilos para el enlace de retirar consentimiento */
+.popup b {
+    background-color: #EBD7A3;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos para cerrar el pop-up */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/* styles.css */
+.politicas{
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.elemento-desplazable {
+    position: absolute;
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    cursor: grab;
+
+    /* Posición inicial */
+    left: 50px;
+    top: 50px;
+}
