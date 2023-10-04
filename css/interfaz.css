@@ -5,7 +5,7 @@ body {
 
 .elemento-desplazable {
     position: absolute;
-    width: 150px; /* Adjust the width as needed */
+    width: 100px; /* Adjust the width as needed */
     height: 100px; /* Adjust the height as needed */
     cursor: grab;
 
@@ -13,3 +13,20 @@ body {
     left: 50px;
     top: 50px;
 }
+.overlay {
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Adjust the width to 500px */
+    height: 600px; /* Adjust the height to 600px */
+    background-color: rgb(154, 154, 255);
+    z-index: 9999;
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
