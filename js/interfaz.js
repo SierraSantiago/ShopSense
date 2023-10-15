@@ -1,5 +1,6 @@
 const elemento = document.querySelector('.elemento-desplazable');
 const overlay = document.getElementById('overlay');
+const closeButton = document.querySelector('.close-button'); 
 
 let isDragging = false;
 let offsetX, offsetY;
@@ -41,8 +42,14 @@ document.addEventListener('mouseup', (e) => {
         elemento.style.cursor = 'grab';
     } else if (e.target === elemento) {
         // If it's a click action within the elemento-desplazable, display the overlay
+        elemento.style.display = 'none';
         overlay.style.display = 'block';
-        overlay.style.left = left + 'px';
-        overlay.style.top = top + 'px';
+        overlay.style.left = 800 + 'px';
+        overlay.style.top = 360 + 'px';
     }
+});
+
+closeButton.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    elemento.style.display = 'block';
 });

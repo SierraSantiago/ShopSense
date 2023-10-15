@@ -1,18 +1,18 @@
 body {
     margin: 0;
     overflow: hidden;
+    font-size: 16px; /* Establece un tamaño de fuente base */
 }
 
 .elemento-desplazable {
     position: absolute;
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    width: 8%; /* Utiliza porcentaje para el ancho */
+    height: auto; /* Permite que la altura se ajuste automáticamente al contenido */
     cursor: grab;
-
-    /* Posición inicial */
-    left: 50px;
-    top: 50px;
+    left: 5%; /* Utiliza porcentaje para la posición */
+    top: 15%; /* Utiliza porcentaje para la posición */
 }
+
 .overlay {
     display: none;
     position: fixed;
@@ -26,7 +26,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
+.close-button {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus necesidades */
+    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    cursor: pointer;
+    font-size: 24px;
+    color: white; /* Cambia el color del botón de cierre */
+}
