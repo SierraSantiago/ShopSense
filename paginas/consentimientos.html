@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="../css/consentimientos.css">
+</head>
+<body>
+    <h1>Panel de Administrador</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>HabeasData</th>
+            <th>Fecha y Hora</th>
+            <th>Consentimiento</th>
+            <th>Fecha y Hora</th>
+        </tr>
+        <tr>
+            <td id="IdUsuario"></td>
+            <td id="HabeasData"></td>
+            <td id="FechaHabeasData"></td>
+            <td id="Consentimiento"></td>
+            <td id="FechaConsentimiento"></td>
+        </tr>
+        
+        <!-- Agrega más filas según tus datos -->
+    </table>
+    <script>
+        // Obtén el valor del IdUsuario y asigna el resultado a la página
+        fetch('/obtener-datos') // Debes definir esta ruta en tu servidor
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('IdUsuario').textContent = data.IdUsuario;
+                document.getElementById('HabeasData').textContent = data.HabeasData;
+                document.getElementById('FechaHabeasData').textContent = data.DateHabeasData;
+                document.getElementById('Consentimiento').textContent = data.Consentimientos;
+                document.getElementById('FechaConsentimiento').textContent = data.DateConsentimientos;
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>
