@@ -5,7 +5,7 @@ const popup = document.getElementById('popup');
 const closePopup = document.getElementById('close-popup');
 const acceptButton = document.getElementById('accept');
 const denyButton = document.getElementById('denegar');
-const withdrawLink = document.getElementById('withdraw');
+
 
 
 // Mostrar el pop-up al cargar la página
@@ -21,12 +21,12 @@ closePopup.onclick = function () {
 // Cerrar el pop-up al hacer clic en "Aceptar"
 acceptButton.onclick = function () {
     popup.style.display = 'none';
-    connection.query('UPDATE registroconsentimiento SET HabeasData = 1,DateHabeasData = NOW()  WHERE IdUsuario = 1001369917');
+    connection.query('UPDATE registroconsentimiento SET Consentiminetos = 1,DateConsentimiento = NOW()  WHERE IdUsuario = 1001369917');
 };
 
 // Acción al hacer clic en "Retirar Consentimiento"
 denyButton.onclick = function () {
     popup.style.display = 'none';
-    connection.query('UPDATE registroconsentimiento SET HabeasData = 0,DateHabeasData = NOW()  WHERE IdUsuario = 1001369917');
+    connection.query('UPDATE registroconsentimiento SET Consentiminetos = 0,DateConsentiminetos = NOW()  WHERE IdUsuario = 1001369917');
 };
 
