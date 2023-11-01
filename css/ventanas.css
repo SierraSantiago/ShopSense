@@ -1,0 +1,42 @@
+body {
+    color: #f0f0f0;
+}
+
+li{
+    color: #FDDD1A;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: #f0f0f0;
+}
+
+footer{
+    background-color: #062B5D;
+}
+
+.center{
+    display: block;
+    width: 15%;
+}
+
+.logo{
+    display: block;
+    margin-right: auto;
+    width: 15%
+}
+
+.blue{
+    color: #062B5D;
+}
+
+.yellow{
+    background-color: #FDDD1A;
+}
+
+.header {
+    background-color: #062B5D;
+}
