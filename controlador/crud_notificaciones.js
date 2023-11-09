@@ -1,14 +1,14 @@
-import express  from "express";
+import  express  from "express";
 import { conectar } from "../modelo/db_conectar.js";
 
-var crud_consentimientos = ({})
-crud_consentimientos.leer = (req, res)=>{ 
+var crud_notificaciones = ({})
+crud_notificaciones.leer = (req, res)=>{ 
     conectar.query('SELECT IdUsuario,HabeasData,DateHabeasData,Consentimientos,DateConsentimientos FROM registroconsentimiento', (err, result) => {
         if (err) {
             throw err;
         } else {
-            res.render('concentimiento.ejs', { resultado: result });
+            res.render('notificaciones.ejs', { resultado: result });
         }
     });
 }
-export {crud_consentimientos}
+export {crud_notificaciones}

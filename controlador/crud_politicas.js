@@ -1,14 +1,15 @@
 import express  from "express";
 import { conectar } from "../modelo/db_conectar.js";
 
-var crud_consentimientos = ({})
-crud_consentimientos.leer = (req, res)=>{ 
+
+var crud_politicas = ({})
+crud_politicas.leer = (req, res)=>{ 
     conectar.query('SELECT IdUsuario,HabeasData,DateHabeasData,Consentimientos,DateConsentimientos FROM registroconsentimiento', (err, result) => {
         if (err) {
             throw err;
         } else {
-            res.render('concentimiento.ejs', { resultado: result });
+            res.render('politicas.ejs', { resultado: result });
         }
     });
 }
-export {crud_consentimientos}
+export {crud_politicas}

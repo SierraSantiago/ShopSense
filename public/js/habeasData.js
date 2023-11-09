@@ -1,4 +1,4 @@
-const connection = require('./conexion'); // Asegúrate de ajustar la ruta al archivo db.js si es necesario
+
 
 // Obtener elementos del DOM
 const popup = document.getElementById('popup');
@@ -21,12 +21,11 @@ closePopup.onclick = function () {
 // Cerrar el pop-up al hacer clic en "Aceptar"
 acceptButton.onclick = function () {
     popup.style.display = 'none';
-    connection.query('UPDATE registroconsentimiento SET HabeasData = 1,DateHabeasData = NOW()  WHERE IdUsuario = 1001369917');
+   
 };
 
 // Acción al hacer clic en "Retirar Consentimiento"
 denyButton.onclick = function () {
     popup.style.display = 'none';
-    connection.query('UPDATE registroconsentimiento SET HabeasData = 0,DateHabeasData = NOW()  WHERE IdUsuario = 1001369917');
 };
 
