@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="../css/consentimientos.css">
+</head>
+
+<body>
+    <h1>Panel de Administrador</h1>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>HabeasData</th>
+            <th>Fecha y Hora</th>
+            <th>Consentimiento</th>
+            <th>Fecha y Hora</th>
+        </thead>
+        <tbody>
+            <% resultado.forEach((usuario) => { %>
+            <tr>
+                <td><%= usuario.IdUsuario %></td>
+                <td><%= usuario.HabeasData %></td>
+                <td><%= usuario.DateHabeasData %></td>
+                <td><%= usuario.Consentimientos %></td>
+                <td><%= usuario.DateConsentimientos %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
