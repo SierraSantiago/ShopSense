@@ -5,8 +5,10 @@ import { crud_politicas } from "./controlador/crud_politicas.js";
 import { crud_notificaciones } from "./controlador/crud_notificaciones.js";
 
 const app_e = express();
+
 app_e.use(express.urlencoded({ extended: false }));
 app_e.use(express.json());
+
 app_e.use(express.static('./vista'));
 app_e.use(express.static('./controlador'));
 app_e.use(express.static('./modelo'));
@@ -36,3 +38,5 @@ app_e.get('/notificaciones', crud_notificaciones.leer);
 
 //Metodo Post
 app_e.post('/crud_h',crud_habeasData.cud);
+
+app_e.post('/crud_n',crud_notificaciones.cud);

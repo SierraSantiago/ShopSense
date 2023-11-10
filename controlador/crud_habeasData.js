@@ -21,7 +21,7 @@ crud_habeasData.cud=(req,res)=>{
             if (err) {
                 throw err;
             } else {
-                res.redirect('/habeasData');
+               
             }
         });
     }else if(denegar){
@@ -29,7 +29,7 @@ crud_habeasData.cud=(req,res)=>{
             if (err) {
                 throw err;
             } else {
-                res.redirect('/habeasData');
+                
             }
         });
     }
