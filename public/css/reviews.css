@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #062b5d; /* Cambiar el color de fondo a #062b5d */
+    color: #f0f0f0; /* Cambiar el color del texto a #f0f0f0 */
+}
+
+.rating {
+    font-size: 36px;
+    margin: 20px;
+}
+
+.star {
+    cursor: pointer;
+    color: gray; /* Establecer color de estrella no seleccionada */
+}
+
+.star.selected {
+    color: #FFD700 /* Mantener el color amarillo al seleccionar estrellas */
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin: 10px;
+    resize: none;
+    font-style: italic; /* Establecer cursiva para el marcador de posición */
+}
+
+button {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFD700;
+}

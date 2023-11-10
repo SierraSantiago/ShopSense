@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pop-up Informativo de Habeas Data</title>
+    <link rel="stylesheet" href="../css/habeasData.css">
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <span class="close" id="close-popup">&times;</span>
+        <h2>Permisos Habeas Data</h2>
+        <p>Es importante para nosotros proteger la privacidad y seguridad de sus datos personales.
+            En cumplimiento de la legislación vigente sobre protección de datos y Habeas Data, le solicitamos su permiso
+            para recopilar, almacenar y utilizar sus datos personales de acuerdo con nuestras
+            <span class="politicas"> <a href="http://localhost:5000/politicas" target="_blank">políticas de
+                    privacidad</a></span>.
+        </p>
+        <form action="/crud_h" method="post">
+            <button type="submit" id="accept" name="accept" value="aceptar">Aceptar</button>
+            <button type="submit" id="denegar" name="denegar" value="denegar">Denegar</button>
+        </form>
+
+    </div>
+
+
+     <script src="../js/habeasData.js"></script>
+
+
+
+</body>
+
+</html>
